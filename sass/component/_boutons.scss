@@ -1,0 +1,26 @@
+.btn{
+    background: $color-tertiary;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    transition: none;
+    margin-right: 20px;
+    @extend %fontfjalla;
+    @include ipad-only{
+        margin: 0;
+    };
+    :visited{
+        color: #fff;
+    }
+    &:hover{
+        background-color: $color-primary;
+    }
+    &-big{
+        width: 50%;
+        text-align: center;
+        display: inline-block;
+        padding: 20px;
+        margin: 40px auto;
+        font-size: 1.5rem;
+    }
+}

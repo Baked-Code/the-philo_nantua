@@ -1,0 +1,39 @@
+.presentation{
+    @include section-deco($color-primary);
+    position: relative;
+    box-shadow: 0px 5px 20px 3px #000,
+                0px -5px 20px 3px #000;
+    @include ipad-only{
+        height: 100vh;
+    };
+    &__container{
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        @include ipad-only{
+            width: 100%;
+            flex-direction: column
+        };
+    }
+    &__content{
+        flex: 2;
+        @include ipad-only{
+            flex: 1;
+            text-align: center;
+            margin: 30px;
+        };
+    }
+    &__logo{
+        flex: 1;
+        border-radius: map-get($blob , blob1 ) / map-get($blob , blob2 ) ;
+        background-color: $color-quaternary;
+        padding: 50px;
+        img{
+            aspect-ratio: 1 / 1;
+            height: 300px;
+        }
+    }
+
+}

@@ -1,0 +1,30 @@
+.nav__rs{
+    color: $color-tertiary;
+    font-size: 3rem;
+    margin-left: 20px;
+    @include lien-visit($color-tertiary);
+    @include ipad-only{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+
+    }
+    a:hover{
+        color: $color-primary;
+    }
+}
+.nav__links{
+    font-size: 1.25rem;
+    margin-right: 20px;
+    @include ipad-only{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 0;
+    }
+    &-link{
+        color: #000;
+        @include lien-visit(#000);
+    }
+}

@@ -1,0 +1,7 @@
+footer{
+    @include section-raw($color-tertiary, 150px, center);
+    gap: 50px;
+    img{
+        max-height: 50px;
+    }
+}

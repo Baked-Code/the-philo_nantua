@@ -1,0 +1,12 @@
+.bande{
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    right: 40px;
+    gap: 7.5px;
+    img{
+        aspect-ratio: 935 / 61;
+        height: 30px;
+        margin: 12px 0;
+    }
+}

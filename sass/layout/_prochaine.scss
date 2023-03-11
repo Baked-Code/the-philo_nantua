@@ -1,0 +1,43 @@
+.prochaine{
+    @include section-raw($color-secondary);
+    @include ipad-only{
+        height: 100vh;
+    };
+    &__container{
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        @include ipad-only{
+            width: 100%;
+            flex-direction: column
+        };
+    }
+    &__image{
+        flex: 1;
+        img{
+            max-height: 300px
+        }
+    }
+    &__content{
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        @include ipad-only{
+            flex: 1;
+            text-align: center;
+            margin: 30px;
+        };
+
+    }
+    h3 span{
+        display: inline-block;
+        font-family: 'Cantarell' sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+}

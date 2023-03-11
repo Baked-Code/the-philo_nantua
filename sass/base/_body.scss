@@ -1,0 +1,15 @@
+body{
+    width: 100%;
+    font-family: 'Cantarell', sans-serif;
+}
+h1{
+    font-size: 3rem;
+    @extend %fontfjalla;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+}
+h3{
+    @extend %fontfjalla;
+    padding: 10px 0px;
+    font-size: 2rem;
+}
